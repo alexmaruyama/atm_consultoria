@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
 
-class TelaServico extends StatefulWidget {
+class TelaContato extends StatefulWidget {
   @override
-  _TelaServicoState createState() => _TelaServicoState();
+  _TelaContatoState createState() => _TelaContatoState();
 }
 
-class _TelaServicoState extends State<TelaServico> {
+class _TelaContatoState extends State<TelaContato> {
   @override
   Widget build(BuildContext context) {
     return Container(
       child: Scaffold(
         appBar: AppBar(
-          title: Text('Serviço'),
+          title: Text('Contato'),
           backgroundColor: Colors.green,
         ),
         body: SingleChildScrollView(
@@ -19,9 +19,9 @@ class _TelaServicoState extends State<TelaServico> {
             children: <Widget>[
               Row(
                 children: <Widget>[
-                  Image.asset('imagens/detalhe_servico.png'),
+                  Image.asset('imagens/detalhe_contato.png'),
                   Text(
-                    'Sobre o serviço',
+                    'Sobre o contato',
                     style: TextStyle(
                       fontSize: 15,
                       color: Colors.red,

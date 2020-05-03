@@ -1,3 +1,5 @@
+import 'package:atm_consultoria/tela_cliente.dart';
+import 'package:atm_consultoria/tela_contato.dart';
 import 'package:atm_consultoria/tela_empresa.dart';
 import 'package:atm_consultoria/tela_servico.dart';
 import 'package:flutter/material.dart';
@@ -28,8 +30,16 @@ class _HomeState extends State<Home> {
             context, MaterialPageRoute(builder: (context) => TelaServico()));
         break;
       case 'cliente':
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => TelaCliente()),
+        );
         break;
       case 'contato':
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => TelaContato()),
+        );
         break;
     }
   }
